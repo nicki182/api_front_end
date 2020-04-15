@@ -4,8 +4,6 @@ import Register from "./register"
 import Frontpage from './frontpage'
 import { Switch, Route,Redirect } from 'react-router-dom'
 import Page from "./page";
-import Delete from "./delete";
-import LogOut from "./logOut";
 class App extends Component{
         render() {
         return (
@@ -15,15 +13,7 @@ class App extends Component{
                         <Route exact path="/" component={Frontpage}/>
                         <Route exact path="/LOG_IN" component={LogIn} />
                         <Route exact path="/REGISTER" component={Register} />
-<<<<<<< HEAD
                         <Route exact path="/PAGE" component={Page} />
-                        <Route exact path="/DELETE" component={Delete}/>
-                        <Route exact path="/LOG_OUT" component={LogOut}/>
-=======
-                        <Route exact path="/Page" component={Page} />
-                        <Route exact path="/Delete" component={Delete}/>
-                        <Route exact path="/Log_Out" component={LogOut}/>
->>>>>>> origin/master
                     </Switch>
             </div>
         </div>
